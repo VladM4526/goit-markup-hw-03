@@ -99,6 +99,7 @@
 }
 
 .webstudio-filter-buttons {
+    width: 1158px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
