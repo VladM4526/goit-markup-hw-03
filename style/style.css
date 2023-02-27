@@ -25,6 +25,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 .webstudio-header {
@@ -37,6 +38,7 @@
 
 .webstudio-nav li {
     display: inline-block;
+    margin: 0px 0px 0px 40px;
 }
 
 .webstudio-nav-logo {
@@ -56,6 +58,10 @@
     line-height: 1;
 }
 
+.webstudio-header-menu {
+    margin-left: 76px;
+}
+
 .webstudio-header-menu a {
     font-style: normal;
     font-weight: 500;
@@ -71,7 +77,11 @@
 }
 
 .webstudio-header-menu li {
-    padding-left: 40px;
+    margin-left: 40px;
+}
+
+.webstudio-header-menu li:first-child {
+    margin-left: 0px;
 }
 
 .webstudio-header-contant {
@@ -80,7 +90,7 @@
 
 .webstudio-header-contant li {
     display: inline-block;
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 .webstudio-header-contant a {
@@ -96,6 +106,10 @@
 .webstudio-header-contant a:focus {
     color: var(--Pressed-state);
     cursor: pointer;
+}
+
+.webstudio-header-contant li:first-child {
+    margin-left: 0px;
 }
 
 /*Effective Solutions for Your Business*/
@@ -149,12 +163,28 @@
 
 /*Services*/
 
-.webstudio-services-container ul {
-    width: 1158px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.webstudio-services {
     margin-top: 120px;
+}
+
+.webstudio-services-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-services-container ul {
+    display: flex;
+}
+
+.webstudio-services-container li {
+    display: inline-block;
+}
+
+.webstudio-services-container li:first-child {
+    margin-left: 0px;
 }
 
 .webstudio-services-title {
@@ -167,7 +197,7 @@
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .webstudio-services-text {
@@ -182,16 +212,25 @@
 
 /*Our jobs*/
 
-.webstudio-our-jobs-container {
-    width: 1158px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-}
-
 .webstudio-our-jobs {
     margin-top: 120px;
+}
+
+.webstudio-our-jobs-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-our-jobs-container ul {
+    display: flex;
+    margin-top: 72px;
+}
+
+.webstudio-our-jobs-container li {
+    margin-left: 24px;
 }
 
 .webstudio-our-jobs-text {
@@ -202,30 +241,26 @@
     text-align: center;
 }
 
-.webstudio-our-jobs-images {
-    display: flex;
-    justify-content: center;
-    margin-top: 72px;
-}
-
-.webstudio-our-jobs-images img {
-    margin-left: 24px;
+.webstudio-our-jobs-container li:first-child {
+    margin-left: 0px;
 }
 
 /*Our team*/
 
 .webstudio-our-team {
     margin-top: 100px;
+    background: var(--Light);
+    height: 732px;
+    margin-top: 120px;
 }
 
-.webstudio-our-team-cards {
-    display: flex;
-    justify-content: center;
+.webstudio-our-team-container {
+    width: 1158px;
     margin-top: 75px;
-}
-
-.webstudio-our-team-cards li {
-    margin-left: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .webstudio-our-team-title {
@@ -237,19 +272,14 @@
     padding-top: 120px;
 }
 
-.webstudio-our-team {
-    background: var(--Light);
-    height: 732px;
-    margin-top: 120px;
+.webstudio-our-team-cards {
+    width: 264px;
+    display: flex;
+    margin-top: 72px;
 }
 
-/*Our team*/
-
-.webstudio-our-team-container {
-    width: 1158px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.webstudio-our-team-cards li {
+    margin-left: 24px;
 }
 
 .webstudio-our-team-cards-employee {
@@ -277,18 +307,29 @@
 }
 
 .webstudio-our-team-cards-employee-titles {
-    padding: 32px 16px 32px 16px;
+    padding: 32px 16px;
+}
+
+.webstudio-our-team-cards li:first-child {
+    margin-left: 0px;
 }
 
 /*Footer*/
 
-.webstudio-footer-container {
-    width: 264px;
-    padding: 100px 0px 100px 156px;
-}
-
 .webstudio-footer {
     background: var(--Dark);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-footer-container {
+    padding: 100px 0px 100px 0px;
+}
+
+.webstudio-footer-container-style {
+    width: 264px;
 }
 
 .webstudio-footer-logo {
@@ -314,6 +355,6 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--Accent);
-    padding-top: 15px;
+    margin-top: 15px;
     letter-spacing: 0.02em;
 }

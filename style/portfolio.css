@@ -25,6 +25,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 .webstudio-header {
@@ -38,6 +39,7 @@
 
 .webstudio-nav li {
     display: inline-block;
+    margin: 0px 0px 0px 40px;
 }
 
 .webstudio-nav-logo {
@@ -57,6 +59,10 @@
     line-height: 1;
 }
 
+.webstudio-header-menu {
+    margin-left: 76px;
+}
+
 .webstudio-header-menu a {
     font-style: normal;
     font-weight: 500;
@@ -72,7 +78,11 @@
 }
 
 .webstudio-header-menu li {
-    padding-left: 40px;
+    margin-left: 40px;
+}
+
+.webstudio-header-menu li:first-child {
+    margin-left: 0px;
 }
 
 .webstudio-header-contant {
@@ -81,7 +91,7 @@
 
 .webstudio-header-contant li {
     display: inline-block;
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 .webstudio-header-contant a {
@@ -99,11 +109,16 @@
     cursor: pointer;
 }
 
+.webstudio-header-contant li:first-child {
+    margin-left: 0px;
+}
+
+
 /*Services*/
 
-.webstudio-filter-container {
+.webstudio-filter-portfolio-jobs-container {
     width: 1158px;
-    margin-top: 75px;
+    margin-top: 96px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -111,12 +126,9 @@
 }
 
 .webstudio-filter-buttons {
-    width: 1158px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .webstudio-services-style-buttons-items {
@@ -128,7 +140,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    padding: 12px 24px 12px 24px;
+    padding: 12px 24px;
     margin-left: 24px;
 }
 
@@ -142,11 +154,11 @@
                 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*filter-portfolio-jobs*/
+.webstudio-filter-buttons li:first-child {
+    margin-left: 0px;
+} /*не розумію чому не спрацювує*/
 
-.webstudio-filter-portfolio-jobs-container {
-    width: 1158px;
-}
+/*filter-portfolio-jobs*/
 
 .webstudio-filter-portfolio-jobs-cards {
     display: flex;
@@ -191,15 +203,26 @@
     padding-top: 8px;
 }
 
-/*Footer*/
-
-.webstudio-footer-container {
-    width: 264px;
-    padding: 100px 0px 100px 156px;
+.webstudio-filter-portfolio-jobs-cards-items:nth-child(3n + 1) {
+    margin-left: 0px;
 }
+
+/*Footer*/
 
 .webstudio-footer {
     background: var(--Dark);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-footer-container {
+    padding: 100px 0px 100px 0px;
+}
+
+.webstudio-footer-container-style {
+    width: 264px;
 }
 
 .webstudio-footer-logo {
@@ -225,6 +248,6 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--Accent);
-    padding-top: 15px;
+    margin-top: 15px;
     letter-spacing: 0.02em;
 }
