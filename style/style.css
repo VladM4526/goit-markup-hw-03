@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -30,6 +29,7 @@
 
 .webstudio-header {
     padding: 24px 0;
+    border: 1px solid var(--Accent);
 }
 
 .webstudio-nav {
@@ -47,6 +47,7 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    text-decoration: none;
 }
 
 .webstudio-nav-link-color {
@@ -60,6 +61,7 @@
 
 .webstudio-header-menu {
     margin-left: 76px;
+    list-style: none;
 }
 
 .webstudio-header-menu a {
@@ -68,6 +70,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--Dark);
+    text-decoration: none;
 }
 
 .webstudio-header-menu a:hover,
@@ -86,6 +89,7 @@
 
 .webstudio-header-contant {
     margin-left: auto;
+    list-style: none;
 }
 
 .webstudio-header-contant li {
@@ -100,6 +104,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .webstudio-header-contant a:hover,
@@ -208,6 +213,7 @@
 
 .webstudio-services-text-list {
     margin-left: 24px;
+    list-style: none;
 }
 
 /*Our jobs*/
@@ -241,6 +247,10 @@
     text-align: center;
 }
 
+.webstudio-our-jobs-container ul {
+    list-style: none;
+}
+
 .webstudio-our-jobs-container li:first-child {
     margin-left: 0px;
 }
@@ -248,10 +258,8 @@
 /*Our team*/
 
 .webstudio-our-team {
-    margin-top: 100px;
     background: var(--Light);
     height: 732px;
-    margin-top: 120px;
 }
 
 .webstudio-our-team-container {
@@ -306,12 +314,122 @@
     line-height: 1.5;
 }
 
+.webstudio-our-team-container ul {
+    list-style: none;
+}
+
 .webstudio-our-team-cards-employee-titles {
     padding: 32px 16px;
 }
 
 .webstudio-our-team-cards li:first-child {
     margin-left: 0px;
+}
+
+/*Filter portfolio jobs*/
+
+.webstudio-filter-portfolio-jobs-container {
+    width: 1158px;
+    margin-top: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.webstudio-filter-portfolio-jobs-container ul {
+    list-style: none;
+}
+
+.webstudio-filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.webstudio-services-style-buttons-items {
+    margin-left: 24px;
+}
+
+.webstudio-services-style-buttons-items button {
+    border: none;
+    outline: none;
+    background: var(--Light);
+    color: var(--Primary-Brand);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 24px;
+}
+
+.webstudio-services-style-buttons-items button:hover,
+.webstudio-services-style-buttons-items button:focus {
+    background: var(--Pressed-state);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.webstudio-services-style-buttons-items:first-child {
+    margin-left: 0px;
+}
+
+/*filter-portfolio-jobs*/
+
+.webstudio-filter-portfolio-jobs-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+}
+
+.webstudio-filter-portfolio-jobs-cards img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items {
+    width: 360px;
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-bottom: 48px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-styles {
+    border-left: 1px solid var(--Accent);
+    border-right: 1px solid var(--Accent);
+    border-bottom: 1px solid var(--Accent);
+    padding: 32px 16px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-titles {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--Dark);
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-texts {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items:nth-child(3n + 1) {
+    margin-left: 0px;
+}
+
+.webstudio-filter-portfolio-jobs-cards li:nth-child(n + 7) {
+    margin-bottom: 0px;
 }
 
 /*Footer*/
@@ -322,14 +440,29 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .webstudio-footer-container {
-    padding: 100px 0px 100px 0px;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 120px;
+}
+
+.webstudio-footer-container-logo-text {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .webstudio-footer-container-style {
     width: 264px;
+    padding: 100px 0;
 }
 
 .webstudio-footer-logo {
@@ -338,6 +471,7 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    text-decoration: none;
 }
 
 .webstudio-footer-link-color {
